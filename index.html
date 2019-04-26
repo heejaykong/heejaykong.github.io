@@ -1,32 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+	<div>
+		<article>
+			<h1>구렁2조를 소개합니다!</h1>
+			<br>
+			<p><strong>구렁2조 팀 이름의 탄생배경</strong></p>
+			<p>python: 구렁이</p>
+			<p>숫자 2: 2분단에 앉은 팀</p>
+			<p>구렁이 + 2 = 구렁2조!</p>
+			<a href="{{ url_for('about') }}" >팀 소개 보러가기</a>
+		</article>
+	</div>
+</div>
+
+{% endblock %}
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>안녕하세요 희재입니다</title>
-    <!-- css와 연결해주기 -->
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-    <h1>나는 희재</h1>
-    <p id="short-intro">
-        희재입니다...................
-    </p>
-    <h2>skills</h2>
-    <ul>
-        <li class="skill">Java</li>
-        <li class="skill" id="python">Python</li>
-        <li class="skill">C</li>
-        <li class="skill">HTML5</li>
-        <li class="skill">CSS3</li>
-    </ul>
-    <p class="skill">나는 리스트 안의 skill 클래스를 먹기 싫어요</p>
-    
-    <h2>SNS</h2>
-    <a href="naver.com">naver</a>
-    <img src="http://pet.chosun.com/images/news/healthchosun_pet_201802/20180205193238_1635_4749_2414.jpg"/>
-</body>
-</html>
