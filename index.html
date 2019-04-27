@@ -1,20 +1,47 @@
-{% extends 'layout.html' %}
-
-{% block content %}
-<div>
-	<div>
-		<article>
-			<h1>구렁2조를 소개합니다!</h1>
-			<br>
-			<p><strong>구렁2조 팀 이름의 탄생배경</strong></p>
-			<p>python: 구렁이</p>
-			<p>숫자 2: 2분단에 앉은 팀</p>
-			<p>구렁이 + 2 = 구렁2조!</p>
-			<a href="{{ url_for('about') }}" >팀 소개 보러가기</a>
-		</article>
-	</div>
-</div>
-
-{% endblock %}
-
-
+<!DOCTYPE HTML>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>구렁2조를 소개합니다</title>
+        <!-- css와 연결해주기 -->
+        <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+            </nav>
+            <hr>
+        </header>
+        
+        <main role="main">
+            <a href="{{ url_for('index') }}" >뒤로가기</a>
+            <div>
+                <h1>우리 팀원을 소개합니다!</h1>
+                <br>
+                <h2>영수</h2>
+                <h3>"저는 서점을 좋아합니다."</h3>
+                <img src = "https://imgur.com/Dz0GDrq.jpg" width = 180px;/>
+                <p>사진은 혜화의 책방 '어쩌다산책'입니다</p>
+                <br>
+                <h2>형준</h2>
+                <h3>"자는 게 최고야!"</h3>
+                <img src = "https://i.imgur.com/MWDfHYU.png" width = 180px;/>
+                <p>사진은 제 별명이기도 한 달팽이입니다.</p>
+                <br>
+                <h2>채영</h2>
+                <h3>"자는 게 최고야!"</h3>
+                <img src = "https://i.imgur.com/MWDfHYU.png" width = 180px;/>
+                <p>사진은 제 별명이기도 한 달팽이입니다.</p>
+                <br>
+                <h2>희재</h2>
+                <h3>"자는 게 최고야!"</h3>
+                <img src = "https://i.imgur.com/MWDfHYU.png" width = 180px;/>
+                <p>사진은 제 별명이기도 한 달팽이입니다.</p>
+            </div>
+        </main>
+    </body>
+</html>
